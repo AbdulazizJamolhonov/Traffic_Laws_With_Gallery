@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.HelperFragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_likedFragment"
+            app:destination="@id/likedFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.MainFragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_ogohlantiruvchiFragment"
+            app:destination="@id/ogohlantiruvchiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_imtiyozliFragment"
+            app:destination="@id/imtiyozliFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_taqiqlovchiFragment"
+            app:destination="@id/taqiqlovchiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_buyuruvchiFragment"
+            app:destination="@id/buyuruvchiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/likedFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.MainFragments.LikedFragment"
+        android:label="fragment_liked"
+        tools:layout="@layout/fragment_liked" >
+        <action
+            android:id="@+id/action_likedFragment_to_itemAboutFragment"
+            app:destination="@id/itemAboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.MainFragments.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.HelperFragments.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/ogohlantiruvchiFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.HomeFragments.OgohlantiruvchiFragment"
+        android:label="fragment_ogohlantiruvchi"
+        tools:layout="@layout/fragment_ogohlantiruvchi" >
+        <action
+            android:id="@+id/action_ogohlantiruvchiFragment_to_itemAboutFragment"
+            app:destination="@id/itemAboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imtiyozliFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.HomeFragments.ImtiyozliFragment"
+        android:label="fragment_imtiyozli"
+        tools:layout="@layout/fragment_imtiyozli" >
+        <action
+            android:id="@+id/action_imtiyozliFragment_to_itemAboutFragment"
+            app:destination="@id/itemAboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taqiqlovchiFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.HomeFragments.TaqiqlovchiFragment"
+        android:label="fragment_taqiqlovchi"
+        tools:layout="@layout/fragment_taqiqlovchi" >
+        <action
+            android:id="@+id/action_taqiqlovchiFragment_to_itemAboutFragment"
+            app:destination="@id/itemAboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyuruvchiFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.HomeFragments.BuyuruvchiFragment"
+        android:label="fragment_buyuruvchi"
+        tools:layout="@layout/fragment_buyuruvchi" >
+        <action
+            android:id="@+id/action_buyuruvchiFragment_to_itemAboutFragment"
+            app:destination="@id/itemAboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemAboutFragment"
+        android:name="developer.abdulaziz.traffic_laws.Fragments.HelperFragments.ItemAboutFragment"
+        android:label="fragment_item_about"
+        tools:layout="@layout/fragment_item_about" />
+
+</navigation>
